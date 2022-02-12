@@ -1,0 +1,53 @@
+@media  screen and (max-width: 768px) {
+    .header {
+        ul {
+            display: none;
+            background-color: $bg-color;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            right: 0;
+            padding: 20px 1rem;
+            border-radius: 5px;
+            align-items: flex-start;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            z-index: 9;
+         
+        }
+        .showlist {
+            display: flex;
+        }
+        .burger {
+            display: flex;
+            cursor: pointer;
+            
+            
+
+            &:hover {
+                opacity: .8;
+                height: 100%;
+                
+            }
+            
+        }
+    }
+    .hero-section {
+   
+
+        .content {
+          justify-content: center;
+          text-align: center;
+    
+          &-text {
+           width: 90%;
+    
+          }
+        }}
+            
+    .content-img {
+        display: none;
+    }
+}
+
+

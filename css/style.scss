@@ -1,0 +1,186 @@
+$bg-color: #f6f9fe;
+$primaryclr: #372865;
+$textclr: #545454;
+$side-spadding: 50px;
+
+%btn-spec {
+    padding: 12px 13px;
+    background-color: $primaryclr;
+    cursor: pointer;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+%mwmo {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $bg-color;
+}
+
+a, p {
+    color: $textclr;
+}
+
+.header{
+    padding: 25px 50px;
+  
+ 
+    
+    
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        @extend %mwmo;
+        
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        align-items: center;
+        
+
+        a{
+            text-decoration: none;
+
+            &:hover{
+                opacity: .8;
+            }
+            
+        }
+
+        button {
+          @extend %btn-spec;
+
+          &:hover{
+            opacity: .95;
+        }
+        }
+    }
+    .burger {
+        
+        display: none;
+       
+    
+    }
+}
+
+
+// ********** HERO SECTION **********
+
+.hero-section {
+    height: 100%;
+   
+    padding: 28px $side-spadding;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        @extend %mwmo;
+        
+        &-text {
+            width: 60%;
+            margin-top: 35px;
+
+            .text-head p {
+                    background-color: $primaryclr;
+                    padding: 5px 15px;
+                    display: inline-block;
+                    border-radius: 15px;
+                    color: $bg-color;
+                a {
+                    color: $bg-color;
+                }
+            }
+
+            .text-mid {
+                margin: 25px 0;
+
+                h1{
+                    font-size: 3.5rem;
+                    color: $primaryclr;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .text-email{
+
+                input{
+                    height: 2.7rem;
+                    font-size: 1rem;
+                    width: 50%;
+                    padding: 0 7px;
+                    border: 1px solid #dcdfe4;
+                    border-radius: 4px;
+                   
+                    
+                    &:focus{
+                        outline: 1px solid $primaryclr;
+                      
+                    }
+                }
+
+                button {
+                    @extend %btn-spec;
+                    margin-left: 5px;
+
+                    &:hover{
+                        opacity: .95;
+                    }
+                }
+            }
+        }
+
+        &-img{
+            height: 380px;
+
+
+            img{
+                height: 100%;
+            }
+        }
+    }
+
+    
+}
+
+
+// ********* FOOTER ********
+
+.footer {
+    padding: 0 $side-spadding;
+
+    .ft-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+        @extend %mwmo;
+        
+
+        .companies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+    }
+}
+
+
+// ********* RESPONSIVE *********
+
+@import 'tablet';
+@import 'phone';

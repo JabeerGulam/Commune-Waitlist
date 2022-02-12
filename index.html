@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commune Waitlist</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./Assets/Illustration.png" type="image/x-icon">
+    <script src="./js/jquery.js"></script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <img src="./Assets/Logo.svg" alt="">
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Features</a>
+                </li>
+                <li>
+                    <a href="#">Affiliates</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+                <li>
+                    <a href="#">Communities</a>
+                </li>
+                <button>
+                    Join WaitList
+                </button>
+            </ul>
+            <div class="burger">
+                <img src="./Assets/Hamburger Menu.svg" alt="">
+            </div>
+        </nav>
+    </div>
+    <div class="hero-section">
+        <div class="content">
+            <div class="content-text">
+                <div class="text-head">
+                    <p>We are now allowing early-access for users. <a href="#">Learn more</a></p>
+                </div>
+                <div class="text-mid">
+                    <h1>Build a highly engaged community with no effort.</h1>
+                    <p>Commune offers the tools you need to build highly engaged community with littleto no effort. Simply setup your Commune workspace, 
+                      and manage everything from members to content from one central dashboard.</p>
+                </div>
+                <div class="text-email">
+                    <input type="text" name="" id="" placeholder="Enter your email address">
+                    <button>Join WaitList</button>
+                </div>
+            </div>
+            <div class="content-img">
+                <img src="./Assets/Illustration.png" alt="" srcset="">
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="ft-content">
+            <p>Used by these companies:</p>
+            <div class="companies">
+                <img src="./Assets/Atlassian Icon.svg" alt="">
+                <img src="./Assets/Behance Icon.svg" alt="">
+                <img src="./Assets/Bing Icon.svg" alt="">
+                <img src="./Assets/Bitbucket Icon.svg" alt="">
+                <img src="./Assets/Dropbox Icon.svg" alt="">
+                <img src="./Assets/Twitch Icon.svg" alt="">
+                <img src="./Assets/Twitter Icon.svg" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- </div> -->
+  <script>
+    //   let burger = document.querySelector('.burger')
+    //   var list = document.querySelector('ul')
+
+    //   burger.onclick = () => {
+    //       list.classList.toggle("showlist", 0.5)
+    //   }
+      
+    
+      $('.burger').click( function(){
+
+          $('ul').toggleClass('showlist')
+      })
+    
+  </script>
+</body>
+</html>

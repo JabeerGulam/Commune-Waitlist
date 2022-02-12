@@ -1,0 +1,67 @@
+@media  screen and (max-width: 480px) {
+    .header {
+        padding: 25px 25px;
+        ul {
+           
+            left: 0;
+            right: 0;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+         
+        }
+    .hero-section {
+   
+
+        .content {
+          justify-content: center;
+          text-align: center;
+    
+          &-text {
+           width: 90%;
+    
+          }
+        }}
+            
+    .content-img {
+        display: none;
+    }
+}
+
+.hero-section {
+
+    padding: 28px 25px;
+
+    .content-text {
+         width: 100%;
+  
+        }
+
+
+        .text-email{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            input{
+                
+                width: 100% !important;
+
+               
+            }
+
+            button {
+               margin-left: 0 !important;
+            }
+        }
+      }
+
+      .footer {
+        padding: 0 25px;
+      }
+
+
+    }
+ 
+
+
+
+
